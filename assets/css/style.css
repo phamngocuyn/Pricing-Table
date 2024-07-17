@@ -1,0 +1,194 @@
+@import 'path/to/node_modules/css-reset-and-normalize/scss/reset-and-normalize';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-plan {
+    width: 391px;
+    height: 768px;
+    background-color: #fff;
+    overflow: visible;
+    position: relative;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    background-color: #2C2E3D;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.shape {
+    background-image: url("../img/Shape\ 1.svg");
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    top: -35px;
+    left: calc(65% - 5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape p {
+    color: #FFFF;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.6000000238418579px;
+    text-align: center;
+}
+
+.circle h4 {
+    color: #04D7F2;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.circle p {
+    color: #99A9B5;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.pricing-plan .top-section {
+    height: 272px;
+    padding: 44px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-section h1 {
+    color: #FFFF;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 1.8px;
+    text-align: left;
+}
+
+.top-section h2 {
+    color: #FFFF;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 1.8px;
+    text-align: left;
+}
+
+.top-section h6 {
+    color: #FFFF;
+    margin-top: 13.5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+
+.pricing-plan .bottom-section {
+    height: calc(100% - 272px);
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pricing-plan:nth-child(1) .top-section {
+    background-color: #00BCD4; 
+}
+
+.pricing-plan:nth-child(2) .top-section {
+    background-color: #1C94CA; 
+}
+
+.pricing-plan:nth-child(3) .top-section {
+    background-color: #7264BD; 
+}
+
+.pricing-plan h3 {
+    font-family: Source Sans Pro;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: left;
+    color: #5F727F;
+}
+
+.pricing-plan .bottom-section>p {
+    color: #99A9B5;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+
+.pricing-plan ul {
+    list-style-type: none;
+    margin-top: 24px;
+}
+
+.pricing-plan ul li {
+    padding: 10px 0;
+    display: flex;
+    align-content: center;
+}
+
+.pricing-plan ul li p{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pricing-plan .btn {
+    width: 150px;
+    height: 50px;
+    background-color: #2C2E3D;
+    color: #FFFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.pricing-plan .btn:hover {
+    background-color: #0056b3;
+}
