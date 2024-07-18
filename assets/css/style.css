@@ -8,7 +8,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,33 +38,35 @@ body {
     position: relative;
 }
 
-.circle {
+.pricing {
     width: 120px;
     height: 120px;
-    background-color: #2C2E3D;
+    background-color: #393D50;
     border-radius: 50%;
     position: absolute;
     top: -60px;
-    left: calc(50% - 50px);
+    transform: translateX(-50%);
+    left: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: background-color 0.5s;
 }
 
-.shape {
+.mark {
     background-image: url("../img/Shape\ 1.svg");
     position: absolute;
     width: 66px;
     height: 66px;
     top: -35px;
-    left: calc(65% - 5px);
+    left: calc(65% - 10px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.shape p {
+.mark p {
     color: #FFFF;
     font-size: 12px;
     font-weight: 700;
@@ -73,14 +75,14 @@ body {
     text-align: center;
 }
 
-.circle h4 {
+.pricing h4 {
     color: #04D7F2;
     font-size: 32px;
     font-weight: 400;
     text-align: center;
 }
 
-.circle>p {
+.pricing>p {
     color: #99A9B5;
     font-size: 16px;
     font-weight: 400;
@@ -195,7 +197,7 @@ li p {
     margin: 20px 0;
 }
 
-.btn {
+.btn-pricing {
     width: 150px;
     height: 50px;
     background-color: #2C2E3D;
@@ -210,10 +212,14 @@ li p {
     transition: 0.5s;
 }
 
-.btn:hover {
+.btn-pricing:hover {
     background-color: #FFFF;
     color: #2C2E3D;
     border: 1px solid #2C2E3D;
+}
+
+.btn-pricing:hover + .pricing, .btn-pricing:hover ~ .pricing {
+    background-color: #2C2E3D;
 }
 
 @media (max-width: 768px) {
@@ -221,5 +227,30 @@ li p {
         width: 100%;
         margin: 10px 0;
         margin-top: 80px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .pricing-plan {
+        width: calc(50% - 20px); 
+        margin: 80px 10px 10px 10px;
+    }
+
+    .pricing-table {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .pricing {
+        width: 100px;
+        height: 100px;
+    }
+
+    .top-section h1, .top-section h2 {
+        font-size: 30px;
+    }
+
+    .top-section h6 {
+        font-size: 12px;
     }
 }
