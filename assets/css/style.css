@@ -8,7 +8,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +200,7 @@ li p {
 .btn-pricing {
     width: 150px;
     height: 50px;
-    background-color: #2C2E3D;
+    background-color: #B6C6C9;
     color: #FFFF;
     align-items: center;
     justify-content: center;
@@ -213,8 +213,8 @@ li p {
 }
 
 .btn-pricing:hover {
-    background-color: #FFFF;
-    color: #2C2E3D;
+    background-color: #2C2E3D  ;
+    color: #FFFF;
     border: 1px solid #2C2E3D;
 }
 
